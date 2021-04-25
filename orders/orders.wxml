@@ -1,0 +1,34 @@
+<!--pages/orders/orders.wxml-->
+<view class="cu-bar tabbar bg-white shadow foot">
+  <view class="action" bindtap="NavChange" data-cur="pay">
+    <view class='cuIcon-cu-image'>
+      <image src="/images/tabbar/pay{{PageCur=='pay'?'_cur':''}}.png">
+      </image>
+    </view>
+    <view class="{{PageCur=='pay'?'text-green':'text-gray'}}">待付款</view>
+  </view>
+  <view class="action" bindtap="NavChange" data-cur="send">
+    <view class='cuIcon-cu-image'>
+      <image src="/images/tabbar/send{{PageCur=='send'?'_cur':''}}.png"></image>
+    </view>
+    <view class="{{PageCur=='send'?'text-green':'text-gray'}}">待发货</view>
+  </view>
+  <view class="action" bindtap="NavChange" data-cur="receiver">
+    <view class='cuIcon-cu-image'>
+      <image src="/images/tabbar/receiver{{PageCur=='receiver'?'_cur':''}}.png"></image>
+    </view>
+    <view class="{{PageCur=='receiver'?'text-green':'text-gray'}}">待收货</view>
+  </view>
+  <view class="action" bindtap="NavChange" data-cur="evaluate">
+    <view class='cuIcon-cu-image'>
+      <image src="/images/tabbar/evaluate{{PageCur=='evaluate'?'_cur':''}}.png"></image>
+    </view>
+    <view class="{{PageCur=='evaluate'?'text-green':'text-gray'}}">待评价</view>
+  </view>
+  <view class="action" bindtap="NavChange" data-cur="drawback">
+    <view class='cuIcon-cu-image'>
+      <image src="/images/tabbar/drawback{{PageCur=='drawback'?'_cur':''}}.png"></image>
+    </view>
+    <view class="{{PageCur=='drawback'?'text-green':'text-gray'}}">退款售后</view>
+  </view>
+</view>
